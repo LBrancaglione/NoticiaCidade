@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    background: #fff url(../images/fundo.png) repeat-x;
+}
+
+/*HEADER SETTINGS*/
+
+header {
+    width: 100%;
+    color: aliceblue;
+    height: 250px;
+    background: url(../images/detalhe-topo.png) no-repeat;
+    background-position: 80% -1%;
+}
+
+/*NAVIGATION BAR SETTINGS*/
+
+nav {
+    margin: 0 auto;
+    width: 60%;
+}
+
+nav img {
+    margin: 2% 0 2% 0
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style-type: none;
+    background-color: #b10333;
+    width: 700px;
+}
+
+.navlist li {
+    text-align: center;
+    width: 14%;
+    padding: 2%;
+    background: #b10333 url(../images/divisor.png) no-repeat left center;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navlist li:first-of-type {
+    background: none;
+}
+
+.navlist li:hover {
+    background: none;
+    background-color: #69001d;
+    cursor: pointer;
+}
+
+.navlist li:first-child, a#Home {
+    background: #de003e;
+    cursor: text;
+
+    & a {
+        cursor: text;
+    }
+}
+
+/*MAIN CONTAINER SETTINGS*/
+
+.main_container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/*LEFT BAR SETTINGS*/
+
+.left_bar {
+    background: url(../images/fundo-caixa.png);
+    width: 25%;
+    padding: 1%;
+    height: 100%;
+}
+
+.left_bar_title {
+    background: #294c71;
+    color: white;
+    padding: 2%;
+}
+
+.left_bar ul {
+    list-style-type: none;
+    padding: 5%;
+    text-align: left;
+}
+
+.left_bar li {
+    padding: 10% 5% 5% 5%;
+}
+
+.left_bar form {
+    padding-top: 5%;
+}
+
+.left_bar form label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.left_bar form input {
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 2%;
+    width: 95%;
+}
+
+.left_bar form button{
+   border: none;
+   background: #b10333;
+   padding: 5% 8% 5% 8%;
+   color: #fff;
+}
+
+.left_bar form button:hover{
+    cursor: pointer;
+    background: #de003e;
+ }
+
+/*MAIN CARD SETTINGS*/
+.wraper {
+    display: flex;
+    padding: 1.5% 0 1.5% 0;
+    gap: 5%;
+}
+
+.main_card {
+    background: url(../images/fundo-caixa.png);
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.main_card_tittle {
+    background: #294c71;
+    color: white;
+    padding: 2%;
+}
+
+.card {
+    padding-top: 5%;
+}
+
+.card h3 {
+    width: 70%;
+    background-color: #69001d;
+    color: #fff;
+    padding: 1%;
+}
+
+.card img {
+    max-width: 100%;
+    padding: 1% 0 1% 0;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1100px) {
+
+    /*NAVIGATION BAR RESPONSIVE FOR 1100PX*/
+    nav {
+        width: 80%;
+    }
+
+    .navlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        list-style-type: none;
+        background-color: #b10333;
+        width: 180px;
+    }
+
+    .navlist li {
+        text-align: left;
+        padding: 0;
+        width: 80%;
+    }
+
+    .navlist li {
+        padding: 10%;
+    }
+
+    .navitem:not(:first-child) {
+        display: none;
+    }
+
+}
