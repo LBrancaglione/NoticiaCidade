@@ -9,7 +9,6 @@ body {
 }
 
 /*HEADER SETTINGS*/
-
 header {
     width: 100%;
     color: aliceblue;
@@ -19,7 +18,6 @@ header {
 }
 
 /*NAVIGATION BAR SETTINGS*/
-
 nav {
     margin: 0 auto;
     width: 60%;
@@ -27,6 +25,12 @@ nav {
 
 nav img {
     margin: 2% 0 2% 0
+}
+
+/*FOOTER SETTINGS*/
+footer{
+    text-align: center;
+    margin-top: 3%;
 }
 
 .navlist {
@@ -112,22 +116,22 @@ nav img {
 }
 
 .left_bar form input {
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 2%;
     width: 95%;
 }
 
-.left_bar form button{
-   border: none;
-   background: #b10333;
-   padding: 5% 8% 5% 8%;
-   color: #fff;
+.left_bar form button {
+    border: none;
+    background: #b10333;
+    padding: 5% 8% 5% 8%;
+    color: #fff;
 }
 
-.left_bar form button:hover{
+.left_bar form button:hover {
     cursor: pointer;
     background: #de003e;
- }
+}
 
 /*MAIN CARD SETTINGS*/
 .wraper {
@@ -165,6 +169,27 @@ nav img {
     max-width: 100%;
     padding: 1% 0 1% 0;
 }
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card-row h2{
+    color: #4b80b9;
+}
+
+.card-row p{
+    font-size: 14px;
+}
+
+.card-row img {
+    max-width: 40%;
+    padding: 1% 0 1% 0;
+}
+
+
 
 /*RESPONSIVE*/
 
